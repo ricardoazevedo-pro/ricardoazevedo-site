@@ -411,7 +411,6 @@
     </div>
     <p class="hero-desc">
       IT engineer with 3 years of production experience in cloud infrastructure, endpoint management, and identity systems. I build backend software with the mindset of someone who has seen what happens when things fail in production.
-    </p>
     <div class="hero-actions">
       <a href="#projects" class="btn btn-primary">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
@@ -442,8 +441,7 @@
         <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-str">"Python"</span>, <span class="t-str">"Kotlin"</span>, <span class="t-str">"C#"</span></div>
         <div>&nbsp;&nbsp;],</div>
         <div>&nbsp;&nbsp;<span class="t-key">"focus"</span>: <span class="t-str">"critical systems"</span>,</div>
-        <div>&nbsp;&nbsp;<span class="t-key">"experience"</span>: <span class="t-str">"3 years"</span>,</div>
-        <div>&nbsp;&nbsp;<span class="t-key">"open_to_work"</span>: <span class="t-bool">true</span></div>
+        <div>&nbsp;&nbsp;<span class="t-key">"experience"</span>: <span class="t-str">"3 years"</span></div>
         <div><span class="t-key">}</span></div>
         <div style="margin-top:8px"><span class="t-prompt">❯</span> <span class="t-cursor"></span></div>
       </div>
@@ -495,7 +493,7 @@
       </div>
       <div class="info-card">
         <div class="info-card-label">Location</div>
-        <div class="info-card-value">Portugal 🇵🇹 — open to remote</div>
+        <div class="info-card-value">Portugal 🇵🇹</div>
       </div>
       <div class="info-card">
         <div class="info-card-label">Focus</div>
@@ -626,7 +624,7 @@
         <span>HTML</span><span>CSS</span><span>Vanilla JS</span><span>Zero deps</span>
       </div>
       <div class="proj-links">
-        <a href="https://github.com/ricardoazevedo-pro/ricardoazevedo-site" class="proj-link" target="_blank">
+        <a href="https://github.com/ricardoazevedo-pro/ricardoazevedo.pro" class="proj-link" target="_blank">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
           Source
         </a>
@@ -639,7 +637,7 @@
         <span class="badge badge-soon">Planned</span>
       </div>
       <p class="proj-desc">
-        Next: a Python microservice for async job processing, and a C# API with full RBAC and audit logging. Follow on GitHub to stay updated.
+        More projects in the pipeline. Follow on GitHub to stay updated.
       </p>
       <div class="proj-links">
         <a href="https://github.com/ricardoazevedo-pro" class="proj-link" target="_blank">
@@ -706,9 +704,9 @@
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-wrap">
-    <h2 class="contact-title reveal">Open to the right opportunity.</h2>
+    <h2 class="contact-title reveal">Let's connect.</h2>
     <p class="contact-sub reveal">
-      Backend engineering roles where reliability and correctness matter. Based in Portugal, open to remote. 3 years of production infrastructure experience and the engineering mindset to match.
+      Backend engineering roles where reliability and correctness matter. 3 years of production infrastructure experience and the engineering mindset to match.
     </p>
     <div class="contact-cards reveal">
       <a href="https://www.linkedin.com/in/ricardo-azevedo-990b8a227" target="_blank" class="c-card">
@@ -728,9 +726,10 @@
   <div class="footer-l">© <span id="year"></span> Ricardo Azevedo</div>
   <div class="footer-r">source on <a href="https://github.com/ricardoazevedo-pro/ricardoazevedo.pro" target="_blank">github</a></div>
 </footer>
- 
+
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+  const reveals = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
       if (e.isIntersecting) {
@@ -740,7 +739,7 @@
     });
   }, { threshold: 0.08 });
   reveals.forEach(el => io.observe(el));
- 
+
   const sections = document.querySelectorAll('section[id]');
   const navAs = document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll', () => {
@@ -751,4 +750,3 @@
 </script>
 </body>
 </html>
-
