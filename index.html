@@ -726,11 +726,11 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-l">© <span id="year"></span> Ricardo Azevedo</div>
-  <div class="footer-r">source on <a href="https://github.com/ricardoazevedo-pro/ricardoazevedo-site" target="_blank">github</a></div>
+  <div class="footer-r">source on <a href="https://github.com/ricardoazevedo-pro/ricardoazevedo.pro" target="_blank">github</a></div>
 </footer>
-
+ 
 <script>
-  const reveals = document.querySelectorAll('.reveal');
+  document.getElementById('year').textContent = new Date().getFullYear();
   const io = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
       if (e.isIntersecting) {
@@ -740,7 +740,7 @@
     });
   }, { threshold: 0.08 });
   reveals.forEach(el => io.observe(el));
-
+ 
   const sections = document.querySelectorAll('section[id]');
   const navAs = document.querySelectorAll('.nav-links a');
   window.addEventListener('scroll', () => {
@@ -748,6 +748,9 @@
     sections.forEach(s => { if (window.scrollY >= s.offsetTop - 80) cur = s.id; });
     navAs.forEach(a => { a.style.color = a.getAttribute('href') === `#${cur}` ? 'var(--accent2)' : ''; });
   });
+</script>
+</body>
+</html>
 </script>
 </body>
 </html>
